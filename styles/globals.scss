@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./pages/features";
+
+@import "./pages/about_us";
+
+@import "./pages/ticketing";
+@import "./pages/contact";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@200;400;500;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: Poppins;
+}
+
+.Montserrat {
+  font-family: Montserrat;
+}
+
+.Poppins {
+  font-family: Poppins;
+}
+
+@font-face {
+  font-family: DMsans;
+  src: url("./../public/Fonts/DMSans-Regular.ttf");
+}
+
+.Dm-Sans {
+  font-family: "DMsans";
+}
+
+.hero-img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 480px) {
+    background-image: url("./../public/imgs/LandingPage/hero.jpg");
+  }
+}
+
+.info-1-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./../public/imgs/LandingPage/info-bg.jpg");
+}
+
+.hero-cover {
+  background: linear-gradient(180deg, #01063d 0%, rgba(3, 7, 49, 0.72) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  height: 40vh;
+  @media screen and (min-width: 480px) {
+  }
+}
+
+.hero-cover-1 {
+  background: linear-gradient(180deg, #01063d 0%, rgba(3, 7, 49, 0.72) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+.first-cta-box-shadow {
+  box-shadow: 3px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.reasons-to-join-shadow {
+  box-shadow: 0px 0.8125px 0.8125px rgba(0, 0, 0, 0.25);
+}
+
+.upcoming-events-box-shadow {
+  box-shadow: 0px 3.42857px 3.42857px rgba(0, 0, 0, 0.25);
+}
+
+@layer components {
+  .primary-btn {
+    @apply rounded-full lg:px-[48px] lg:py-[10px] px-[30px] py-[7px] hover:bg-DarkBlue duration-300 hover:text-white;
+  }
+  .primary-drop-down {
+    @apply rounded-full w-[56px] h-[15px] sm:w-[10vw] sm:h-[40px] xl:w-[200px] xl:h-[55px] flex items-center justify-center;
+  }
+}
+
+.features-item-box-shadow {
+  box-shadow: 0px 1.59284px 1.59284px rgba(0, 0, 0, 0.25);
+}
